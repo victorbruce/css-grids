@@ -2,7 +2,7 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  border: 5px solid rgba(0, 0, 0, .3);
+  border: 5px solid rgba(0, 0, 0, 0.3);
   border-radius: 3px;
   font-size: 3.5rem;
   background-color: var(--yellow);
@@ -10,8 +10,8 @@
 
 .container {
   display: grid;
-  grid-template-columns: 10rem 20rem;
-  grid-template-rows: 5rem 10rem;
-  grid-auto-rows: 50rem 10rem;
+  grid-template-columns: 40rem 20rem;
+  grid-auto-flow: column;
+  grid-auto-columns: 20rem;
   grid-gap: 2rem;
 }
