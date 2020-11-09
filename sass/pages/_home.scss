@@ -1,0 +1,16 @@
+.item {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgba(0, 0, 0, .3);
+  border-radius: 3px;
+  font-size: 3.5rem;
+  background-color: var(--yellow);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 10rem);
+  grid-template-rows: 20rem 10rem 40rem;
+  grid-gap: 2rem;
+}
