@@ -10,7 +10,8 @@
 
 .container {
   display: grid;
-  grid-template-columns: repeat(5, 10rem);
-  grid-template-rows: 20rem 10rem 40rem;
+  grid-template-columns: 10rem 20rem;
+  grid-template-rows: 5rem 10rem;
+  grid-auto-rows: 50rem 10rem;
   grid-gap: 2rem;
 }
