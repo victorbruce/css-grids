@@ -10,8 +10,14 @@
 
 .container {
   display: grid;
-  grid-template-columns: 40rem 20rem;
-  grid-auto-flow: column;
-  grid-auto-columns: 20rem;
   grid-gap: 2rem;
+  border: 1rem solid var(--yellow);
+
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.item9 {
+  background-color: #BADA55;
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
 }
