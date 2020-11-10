@@ -1,24 +1,34 @@
+// .item {
+//   display: grid;
+//   justify-content: center;
+//   align-items: center;
+//   border: 5px solid rgba(0, 0, 0, 0.3);
+//   border-radius: 3px;
+//   font-size: 3.5rem;
+//   background-color: var(--yellow);
+// }
+
 .item {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  border: 5px solid rgba(0, 0, 0, 0.3);
-  border-radius: 3px;
-  font-size: 3.5rem;
-  background-color: var(--yellow);
+  font-size: 1.5rem;
+  background-color: white;
 }
 
 .container {
   border: 0.5rem solid var(--yellow);
+  margin: 5rem auto;
+  max-width: 900px;
 
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: [side-left] 1fr [content-start] 7fr [content-end] 1fr [side-right];
-  grid-template-rows: [content-top] repeat(10, auto) [content-bottom];
+  grid-template-columns: repeat(5, 10rem);
+  grid-template-rows: repeat(5, 10rem);
+  // justify-items: center;
+  // align-items: center;
+  // place-items: center center;
+  justify-content: center;
+  grid-auto-rows: 10rem;
 }
 
 .item3 {
-  background-color: mistyrose;
-  grid-column: content-start / content-end;
-  grid-row: content-top / content-bottom;
+  justify-self: center;
 }
